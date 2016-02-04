@@ -26,11 +26,15 @@ module.exports = function(width) {
   };
 }
 ```
+
+However, and I hope you'll read that, I'm not totally against Javascript, it's a good thing to have the same language client and server side and easy to use and now cool on the frontend. But In my opinion it would be more interesting to use Javascript, like Ruby to make quick prototype. And many big companies have then switched to languages more adapted to scaling, performance and maintenance. That's only my opinion though and I like to share my technical thoughts.  
+
 ## Steps
 I'm going to do a RESTfull API, there is no real standard but more best practices, I will keep it simple.
 I don't know in which environment you will deploy this (If you do), so don't forget to install these tools **OR USE THE DOCKER IF YOU CAN**:
 
 * **npm**
+* **mongodb**
 
 I started by installing the expressjs : `npm install express --save`
 Then Mongoosejs : `npm install mongoose --save`
@@ -41,6 +45,6 @@ I added bodyParser (as it's not given anymore by default in express) to treat js
 I used apidoc.js to generate a nice documentation : `npm install apidoc -g`
 Which you can find inside `apidoc/` folder, no need to serve it, it's only html with Javascript.
 
-To start manually, you need to install `mongodb`, launch it : `mongod --config /usr/local/etc/mongod.conf` and then launch my app : `node ./api/index.js`
+To start manually, you need to launch mongodb : `mongod --config /usr/local/etc/mongod.conf` and then launch my app : `node ./api/index.js`
 
 Then you can access to `http://localhost:4242/` which will answer you in json.
