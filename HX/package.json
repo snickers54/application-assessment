@@ -1,0 +1,23 @@
+{
+  "name": "holidays-extras",
+  "version": "1.0.0",
+  "description": "Test project for my application at HX",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "expressjs",
+    "mongoose",
+    "CRUD"
+  ],
+  "author": "Julien Singler",
+  "license": "ISC"
+}
