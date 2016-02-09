@@ -13,6 +13,11 @@ I'm also trying to limit at maximum external dependencies, like css files ..
 
 Also, I chose to develop in snake_case because I had to chose something and be consistent.
 
+## HOWTO
+I created a docker to simplify build (concat and minify). But if you want to do it without docker, you just need to install `npm` then do `npm install -g uglify-js` and `make`.
+
+The docker is just here to build, it will exit when finished..
+
 ## Implementation
 
 I developed everything in Object Oriented Javascript, but javascript is not the best language to do so.
@@ -35,7 +40,7 @@ There is obviously improvements to do and bugs to fix, here is a non-exhaustive 
 * [Improvement] Handle click and add particles until you release the mouse button.
 * [Improvement] Well, managing to add collision between particles would be wonderful, but it seems complex and probably won't be fluid.
 * [Improvement] We can clearly see a pattern with `Math.random`, it would be great to have a better random method..
-* [Improvement] A friend of mine, advised me to use `transform:translate` instead of setting directly positions as `top / left` style attributes.. Which should give better perfs as transform:translate is sometimes calculated on GPU ?! 
+* [Improvement] A friend of mine, advised me to use `transform:translate` instead of setting directly positions as `top / left` style attributes.. Which should give better perfs as transform:translate is sometimes calculated on GPU ?!
 
 ## Conclusion
 I had a lot of fun coding this assessment. I hope you found my implementation interesting.
